@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.problema1 {
+    color: #333;
+    font-family: sans-serif;
+}
+.formulario-de-notas {
+    margin-top: 60px;
+    text-align: center;
+    background-color: #26a;
+    padding: 20px;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right:auto;
+}
+.formulario-de-notas h2 {
+    margin: 0;
+    flex-grow: 1;
+    color: #fff;
+    margin-right: 20px;
+}
+.formulario-de-notas input {
+    width: 30px;
+    border: none;
+}
+.formulario-de-notas input[type="button"] {
+    width: auto;
+    margin-left: 5px;
+    background-color: #fff;
+    padding: 4px;
+    letter-spacing: 1px;
+}
+.modal-background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+}
+.modal {
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+.resultado {
+    font-size: 23px;
+}
+.red {
+    color: #f00;
+}
+.green {
+    color: #0f0;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        display: flex;
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+    }
+
+}
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+        display: flex;
+    }
+    100%{
+        opacity: 0;
+        display: flex;
+    }
+
+}
